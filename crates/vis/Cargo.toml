@@ -1,0 +1,19 @@
+[package]
+name = "vis"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+upstair_type.workspace = true
+anyhow.workspace = true
+ta.workspace = true
+account.workspace = true
+symbol_info.workspace = true
+eframe = "0.27.2"
+egui_plot = "0.27.2"
+winit = "0.29.15"
+time = "0.3.34"
+tracing.workspace = true
+yata.workspace = true

@@ -1,0 +1,20 @@
+[package]
+name = "sim"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mimalloc = { version = "0.1.39", default-features = false }
+anyhow.workspace = true
+simulation.workspace = true
+upstair_type.workspace = true
+binance_republisher.workspace = true
+stepper.workspace = true
+tracing-subscriber.workspace = true
+tracing.workspace = true
+market_agent.workspace = true
+clap = { version = "4.5.4", features = ["derive"] }
+symbol_info.workspace = true
+vis.workspace = true

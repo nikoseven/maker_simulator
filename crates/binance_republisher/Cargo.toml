@@ -1,0 +1,15 @@
+[package]
+name = "binance_republisher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+upstair_type.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
+futures.workspace = true
+tracing.workspace = true
+indicatif.workspace = true
+zip.workspace = true

@@ -1,0 +1,40 @@
+[workspace]
+resolver = "2"
+members = [
+  "bin/sim",
+  "crates/upstair_type",
+  "crates/simulation",
+  "crates/binance_republisher",
+  "crates/stepper",
+  "crates/stepper_world",
+  "crates/market_agent",
+  "crates/pure_market_maker",
+  "crates/account",
+  "crates/symbol_info",
+  "crates/vis",
+  "bin/binance_data_download",
+]
+
+[workspace.dependencies]
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+upstair_type = { path = "./crates/upstair_type" }
+simulation = { path = "./crates/simulation" }
+stepper = { path = "./crates/stepper" }
+binance_republisher = { path = "./crates/binance_republisher" }
+market_agent = { path = "./crates/market_agent" }
+stepper_world = { path = "./crates/stepper_world" }
+pure_market_maker = { path = "./crates/pure_market_maker" }
+async-trait = "0.1.76"
+tokio = { version = "1.35.1", features = ["full"] }
+anyhow = { version = "1.0.78", features = ["std"] }
+ta = "0.5.0"
+futures = { version = "0.3.30", features = ["default"] }
+crossbeam = { version = "0.8.3", features = ["default"] }
+indicatif = "0.17.8"
+account = { path = "./crates/account" }
+symbol_info = { path = "./crates/symbol_info" }
+vis = { path = "./crates/vis" }
+yata = "0.7.0"
+zip = "1.1.1"
+polars = { version = "0.39.2", features = ["csv", "parquet"] }
